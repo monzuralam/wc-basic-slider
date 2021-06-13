@@ -44,3 +44,68 @@ body {
     height: 100%;
     object-fit: cover;
 }
+/*************************************
+***** carousel css start here 
+*************************************/
+.product{
+    width:100%;
+}
+.product .product-wrapper{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow:hidden;
+}
+.product .product-wrapper .thumbnail-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.product .product-wrapper .thumbnail-wrapper a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    z-index: 2;
+    transition: 300ms ease 0s;
+}
+.product .product-wrapper .thumbnail-wrapper a .thumbnail-image{
+    position: relative;
+    display: inline-block;
+}
+.product .product-wrapper .thumbnail-wrapper a .thumbnail-image img{
+    width:100%;
+}
+.product .product-wrapper .thumbnail-wrapper a .thumbnail-image img.img-hover{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.product .product-wrapper .thumbnail-wrapper a .thumbnail-image:hover .img-hover{
+    display: inline;
+}
+.product .product-wrapper .meta-wrapper{
+    padding-top: 5px;
+    overflow: hidden;
+}
+.product .product-wrapper .meta-wrapper h3.heading-title{
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    display: block;
+    color:rgba(25,25,25,1);
+    text-align: left;
+}
+.product .product-wrapper .meta-wrapper h3.heading-title a{
+    text-decoration: none;
+    color:inherit;
+}
+.product .product-wrapper .meta-wrapper .price{
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    line-height: 24px;
+}
+.product .product-wrapper .meta-wrapper .price del{
+    margin-right: 5px;
+}
