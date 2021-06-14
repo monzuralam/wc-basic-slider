@@ -70,6 +70,7 @@ body {
 .product .product-wrapper .thumbnail-wrapper a .thumbnail-image{
     position: relative;
     display: inline-block;
+    width: 100%;
 }
 .product .product-wrapper .thumbnail-wrapper a .thumbnail-image img{
     width:100%;
@@ -83,6 +84,39 @@ body {
 }
 .product .product-wrapper .thumbnail-wrapper a .thumbnail-image:hover .img-hover{
     display: inline;
+}
+.product .product-wrapper .thumbnail-wrapper .product-label{
+    position: absolute;
+    right: auto;
+    left: 10px;
+    top: 10px;
+    bottom: auto;
+    z-index: 2;
+    text-align: center;
+}
+.product .product-wrapper .thumbnail-wrapper .product-label span{
+    width: auto;
+    min-width: 50px;
+    min-height: 20px;
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    padding: 0;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    line-height: 20px !important;
+    margin-bottom: 3px;
+    border-radius: 20px;
+}
+.product .product-wrapper .thumbnail-wrapper .product-label .onsale {
+    color: rgba(255,255,255,1);
+    background: rgba(217,18,31,1);
+}
+.product .product-wrapper .thumbnail-wrapper .product-label .featured{
+    color: rgba(255,255,255,1);
+    background: rgba(25,25,25,1);
 }
 .product .product-wrapper .meta-wrapper{
     padding-top: 5px;
