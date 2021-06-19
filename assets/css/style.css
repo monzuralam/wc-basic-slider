@@ -13,6 +13,12 @@ body {
     padding: 0;
 }
 
+.px-100{
+    padding: 100px 0;
+}
+.py-100{
+    padding:0 100px;
+}
 .swiper-container {
     width: 100%;
     height: auto;
@@ -165,4 +171,45 @@ body {
 }
 .product .product-wrapper .meta-wrapper .price del{
     margin-right: 5px;
+}
+/* ------------------------------------------------
+# secound slider 
+* ------------------------------------------------*/
+.secound-slider{
+    position: relative;
+}
+.secoundCarousel .swiper-slide{
+    background-color: transparent;
+}
+
+.secoundCarousel .swiper-slide .product-style-2{
+    text-align: left;
+}
+.secoundCarousel .swiper-slide .product-style-2 a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.secoundCarousel .swiper-slide .product-style-2 .product-wrapper .meta-wrapper h3.heading-title{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.secoundCarousel .swiper-slide .product-style-2 .product-wrapper .meta-wrapper .price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(188, 94, 73);
+    margin-bottom: 8px;
+}
+
+.secoundCarousel .swiper-slide .product-style-2 .product-wrapper .product-group-button .loop-add-to-cart a.button {
+    border-bottom: 2px solid;
+    border-image: initial;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    display:inline-block;
+    padding-bottom: 4px;
+    font-weight: 600;
 }
