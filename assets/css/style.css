@@ -418,3 +418,207 @@ body {
     transform: translateX(0);
     opacity: 1;
 }
+/* ------------------------------------------------
+# Four slider 
+* ------------------------------------------------*/
+.product-style-4{
+    overflow: hidden;
+}
+
+.product-style-4 .product-wrapper .product-thumb{
+    overflow: hidden;
+    position: relative;
+}
+
+.product-style-4 .product-wrapper .product-thumb .image{
+    position: relative;
+    display: block;
+    overflow:hidden
+}
+.product-style-4 .product-wrapper .product-thumb .image img {
+    z-index: 1;
+    max-width: 100%;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+.product-style-4 .product-wrapper .product-thumb .image img.hover-image {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.product-style-4:hover .product-thumb .image img {
+    transform: scale(1.1) rotate(3deg);
+}
+
+.product-style-4:hover .product-thumb .image img:not(:last-child) {
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+
+.product-style-4:hover .product-thumb .image img.hover-image {
+    opacity: 1;
+    transition: .5s all ease-in-out;
+}
+
+.product-style-4 .product-thumb .badges {
+    position: absolute;
+    z-index: 8;
+    top: 18px;
+    left: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-style-4 .product-thumb .badges span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    display: block;
+    padding: 0 7px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.product-style-4 .product-thumb .badges span.new {
+    background-color: #000;
+    margin-bottom: 5px;
+}
+
+.product-style-4 .product-thumb .badges span.hot {
+    background-color: #62b959;
+}
+
+.product-style-4 .product-thumb .actions {
+    position: absolute;
+    z-index: 9;
+    top: 18px;
+    right: 18px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease 0s;
+}
+
+.product-style-4 .product-thumb .actions .action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: #212121;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.product-style-4 .product-thumb .actions .action i {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.product-style-4 .product-thumb .actions .action:not(.wishlist) {
+    visibility: hidden;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.product-style-4 .product-thumb .actions .action+.action {
+    margin-top: 10px;
+}
+
+.product-style-4 .product-thumb .actions .action:hover:not(.active) {
+    color: #fff;
+    background-color: #ff7004;
+}
+
+.product-style-4 .product-thumb .actions .action.active {
+    color: #ff7004;
+}
+.product-style-4 .product-thumb .add-to-cart {
+    display: block;
+    width: 80%;
+    height: 45px;
+    line-height: 45px;
+    background-color: #fff;
+    text-align: center;
+    border: 0;
+    border-radius: 3px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    margin: auto;
+    font-weight: 600;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+    transform: translateY(20px);
+    text-decoration: none;
+    color: #3f3f3f;
+    opacity: 0;
+    font-family: Raleway, sans-serif;
+}
+
+.product-style-4 .product-thumb .add-to-cart:hover {
+    color: #ff7004;
+}
+
+.product-style-4:hover .product-thumb .actions .action {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.product-style-4:hover .product-thumb .add-to-cart {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.product-style-4 .product-desc {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px 0;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.product-style-4 .product-desc .title {
+    font-size: 14px;
+    margin: 0px 0 10px;
+}
+
+.product-style-4 .product-desc .title a{
+    text-decoration: none;
+    color: #1d1d1d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    font-size: 16px;
+}
+
+.product-style-4 .product-desc .price {
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #212121;
+    margin:0px 0px 10px 0px;
+}
+
+.product-style-4 .product-desc .price span.new {
+    color: #3f3f3f;
+    font-weight: 500;
+}
