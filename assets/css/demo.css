@@ -1,3 +1,221 @@
 /* -----------------------------------------------------
 # Product Style 7 
 * -----------------------------------------------------*/
+.product-style-7{
+    position: relative;
+    background: #fff;
+    z-index: 1;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: all .3s linear;
+}
+
+.product-style-7 .img-block{
+    position: relative;
+}
+
+.product-style-7 .img-block a{
+    color:inherit;
+    text-decoration: none;
+}
+
+.product-style-7 .img-block a img{
+    margin: 0;
+    transition: all .3s linear;
+}
+
+.product-style-7 .img-block .second-img {
+    position: absolute;
+    opacity: 0;
+    transition: all .3s linear;
+    left: 0;
+    max-width: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+
+.product-style-7:hover .second-img {
+    opacity: 1;
+    visibility: visible;
+}
+
+.product-style-7 .img-block .quick-view {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    pointer-events: none;
+    z-index: 1;
+    line-height: 1;
+}
+
+.product-style-7 .img-block .quick-view a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: 0 0;
+    color: #47494a;
+    padding: 0;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    pointer-events: visible;
+    opacity: 0;
+    transform: scale3d(0,0,0);
+}
+
+.product-style-7:hover .quick-view a {
+    opacity: 1;
+    transform: scale3d(1,1,1);
+}
+
+.product-style-7 .new {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: inline-block;
+    color: #fff;
+    padding: 0 5px;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-transform: capitalize;
+    text-align: center;
+    z-index: 1;
+    background: #146cda;
+}
+
+.product-style-7 .product-decs {
+    padding: 15px;
+}
+
+.product-style-7 .product-decs a {
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 10px;
+    display: block;
+    color: #146cda;
+}
+
+.product-style-7 .product-decs h3 {
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1;
+}
+
+.product-style-7 .product-decs h3 a {
+    line-height: 18px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #47494a;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.product-style-7 .product-decs .rating-product {
+    margin-bottom: 10px;
+}
+
+.product-style-7 .product-decs .rating-product i {
+    overflow: hidden;
+    margin: 0 1px 0 0;
+    display: inline-block;
+    color: #666;
+    font-weight: 400;
+    line-height: 1;
+    vertical-align: top;
+    font-size: 18px;
+}
+
+.product-style-7 .product-decs .pricing-meta {
+    line-height: 20px;
+    transition: all .3s linear;
+}
+
+.product-style-7 .product-decs .pricing-meta ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+.product-style-7 .product-decs .pricing-meta li.old-price.not-cut {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product-style-7:hover .pricing-meta {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all .3s linear;
+}
+
+.product-style-7 .add-to-link {
+    margin-top: -30px;
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    top: 100%;
+    background: #fff;
+    padding: 0 15px 15px 15px;
+    border: 1px solid #ebebeb;
+    border-top: transparent;
+    border-radius: 0 0 5px 5px;
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(15px) translateZ(0);
+    -webkit-transform: translateY(15px) translateZ(0);
+    perspective: 800px;
+    -webkit-perspective: 800px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: opacity .3s ease,visibility .3s ease,transform .3s ease;
+}
+
+.product-style-7 .add-to-link ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.product-style-7 .add-to-link li {
+    display: inline-flex;
+    line-height: 1;
+    margin-right: 3px;
+    transition: all .3s linear;
+}
+
+.product-style-7 .add-to-link a {
+    display: inline-block;
+    color: #fff;
+    border: none;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    background: #146cda;
+}
+
+.product-style-7:hover .add-to-link {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) translateZ(0);
+}
