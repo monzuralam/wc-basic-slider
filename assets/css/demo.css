@@ -11,6 +11,10 @@
     transition: all .3s linear;
 }
 
+.product-style-7:hover {
+    border: 1px solid #ebebeb;
+}
+
 .product-style-7 .img-block{
     position: relative;
 }
@@ -21,6 +25,7 @@
 }
 
 .product-style-7 .img-block a img{
+    width: 100%;
     margin: 0;
     transition: all .3s linear;
 }
