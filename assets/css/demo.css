@@ -630,3 +630,145 @@
 .product-style-9 .product-desc .price-switcher a.add-cart:hover {
     color: #eb2323;
 }
+
+/* -----------------------------------------------------
+# Product Style 10
+* -----------------------------------------------------*/
+.product-style-10{
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    padding-bottom: 30px;
+    transition: all .3s ease-out;
+}
+
+.product-style-10:hover {
+    box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+}
+
+.product-style-10 .product-img{
+    position: relative;
+}
+
+.product-style-10 .product-img a{
+    transition: all 0.3s ease-out 0s;
+    display: block;
+    text-decoration: none;
+}
+
+.product-style-10 .product-img a img{
+    transition: all 0.3s ease-out 0s;
+    width: 100%;
+    max-width: 100%;
+}
+
+.product-style-10 .product-img .product-img-hover{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.product-style-10 .product-img .product-img-hover a{
+    display: block;
+}
+
+.product-style-10 .product-img .product-img-hover a img{
+    width:100%;
+    max-width: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+
+.product-style-10:hover .product-img-hover a img {
+    opacity: 1;
+}
+
+.product-style-10 .product-img .product-img-hover .single-product-button{
+    position: absolute;
+    display:flex;
+    margin:0;
+    padding:0;
+    bottom: 25px;
+    left: 55%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: .5s;
+}
+
+.product-style-10 .product-img .product-img-hover .single-product-button li{
+    list-style: none;
+}
+
+.product-style-10 .product-img .product-img-hover .single-product-button li a{
+    display: block;
+}
+
+.product-style-10 .product-img .product-img-hover .single-product-button li a i{
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background-color: #222;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    margin: 5px;
+    display: inline-block;
+}
+
+.product-style-10:hover .single-product-button {
+    left: 50% !important;
+    opacity: 1 !important;
+}
+
+.product-style-10 .product-desc{
+    position: relative;
+}
+
+.product-style-10 .product-desc .product-name{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #222;
+    font-weight: 500;
+}
+
+.product-style-10 .product-desc .product-name a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.product-style-10 .product-desc .product-price{
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.product-style-10 .product-desc .product-price span{
+    font-weight: 500;
+    font-size: 14px;
+    color: #222;
+}
+
+.product-style-10 .product-desc .product-price .old-price{
+    color: #999999;
+}
+
+.product-style-10 .sale-tag{
+    color:#fff;
+    width: 50px;
+    height: 50px;
+    background-color: #222;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    margin: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    font-size: 13px;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
