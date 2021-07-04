@@ -1321,3 +1321,160 @@
     opacity: 1;
     bottom: 3px;
 }
+
+/* -----------------------------------------------------
+# Product Style 14
+* -----------------------------------------------------*/
+.product-style-14{
+    position: relative;
+    overflow:hidden;
+    margin-bottom: 30px;
+}
+
+.product-style-14 .product-thumb{
+    position: relative;
+}
+
+.product-style-14 .product-thumb img{
+    width: 100%;
+}
+
+.product-style-14 .product-thumb .label{
+    top: 10px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+    padding: 20px;
+    position: absolute;
+}
+
+.product-style-14 .product-thumb .label ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+    display: table;
+}
+
+.product-style-14 .product-thumb .label ul li{
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 52px;
+    margin-right: 10px;
+    list-style: none;
+    text-align: center;
+    border-radius: 100%;
+    color: #fff;
+    background: #222;
+}
+
+.product-style-14:hover img{
+    transition: all 250ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transform: scale(1.1);
+}
+
+.product-style-14 .product-thumb .hover-content{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    text-align: center;
+    padding-top: 48%;
+    transition: all 0.4s ease-in-out;
+    z-index: 99;
+}
+
+.product-style-14 .product-thumb:hover .hover-content {
+    opacity: 1;
+}
+
+.product-style-14 .product-thumb .hover-content ul{
+    margin: 0;
+    padding: 0;
+}
+
+.product-style-14 .product-thumb .hover-content ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.product-style-14 .product-thumb .hover-content:hover ul li{
+    background: #fff;
+    height: 63px;
+    width: 63px;
+    line-height: 63px;
+    text-align: center;
+    color: #272727;
+    font-size: 20px;
+    display: inline-block;
+}
+.product-style-14 .product-thumb .hover-content ul li.add-to-cart{
+    display: inline-block;
+    width: 100%;
+
+}
+.product-style-14 .product-thumb .hover-content ul li.add-to-cart a{
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+}
+
+.product-style-14 .product-thumb .hover-content ul li.rating{
+    display: inline-block;
+    width: 100%;
+    color: #ebc52d;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.product-style-14 .product-thumb .hover-content:hover ul li.add-to-cart {
+    background: transparent;
+    line-height: 25px;
+}
+
+.product-style-14 .product-thumb .hover-content:hover ul li.rating {
+    background: transparent;
+}
+
+.product-style-14 .product-thumb .hover-content ul li.add-to-cart a:hover{
+    background-color: #222;
+    border-color: #222;
+}
+
+.product-style-14 .product-desc{
+    position: relative;
+    z-index: 99;
+    background: #fff;
+    text-align: center;
+}
+.product-style-14 .product-desc .product-name a{
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0;
+    color: #272727;
+    letter-spacing: 2px;
+    font-size: 16px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.product-style-14 .product-desc .price span{
+    font-size: 14px;
+    letter-spacing: 2px;
+}
