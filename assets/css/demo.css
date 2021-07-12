@@ -1478,3 +1478,124 @@
     font-size: 14px;
     letter-spacing: 2px;
 }
+
+/* -----------------------------------------------------
+# Product Style 15
+* -----------------------------------------------------*/
+.product-style-15{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.product-style-15 .product-thumb{
+    margin-bottom: 34px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-style-15 .product-thumb a{
+    display:block;
+    text-decoration: none;
+}
+
+.product-style-15 .product-thumb a img{
+    transition: all 0.4s ease-in-out;
+}
+
+.product-style-15 .product-thumb img.first-img{
+    opacity: 1;
+}
+
+.product-style-15 .product-thumb img.second-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.product-style-15:hover .product-thumb img.second-img{
+    opacity: 1;
+}
+
+.product-style-15 .product-hover{
+    transition: all 0.4s ease 0s;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 212px;
+    z-index: 5;
+    top: -55px;
+}
+
+.product-style-15 .product-hover  a {
+    background: #ffffff;
+    color: #999999;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 1px 0 0;
+    padding: 15px 20px;
+}
+
+.product-style-15:hover .product-hover{
+    top: 10px;
+}
+
+.product-style-15 .product-hover-cart{
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 212px;
+    z-index: -5;
+}
+
+.product-style-15 .product-hover-cart .btn-cart{
+    background: #ffffff;
+    color: #000000;
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    border-color: #ffffff;
+    padding: 0 30px;
+    line-height: 44px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.product-style-15 .product-hover-cart .btn-cart:hover{
+    background: #000000;
+    color: #FFFFFF;
+    border-color: #000000;
+}
+
+.product-style-15:hover .product-hover-cart {
+    bottom: 100px;
+    z-index: 99;
+}
+
+.product-style-15 .product-desc{
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.product-style-15 .product-desc .product-title{
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-transform: none;
+    letter-spacing: 0.12em;
+}
+
+.product-style-15 .product-desc .product-title a{
+    text-decoration: none;
+    color: #222;
+}
+
+.product-style-15 .product-price {
+    color: #999999;
+}
